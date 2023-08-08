@@ -9,7 +9,13 @@ The image adds ui5 cli, yo and easy-ui5:
 npm install -g @ui5/cli yo generator-easy-ui5
 ```
 
-# Build image
+# Devcontainer
+
+The devcontainer is the file .devcontainer/devcontainer.json. Copy this file to the root folder of your target project and open the folder from VS Code as a dev container. This will create a new container named UI5 development and add the following VS Code plugins: eslint and SAP UX Fiori Tools. 
+
+# Image
+
+## Build image
 
 The image can be build using docker. To build the image with name ui5dev and tag it with 1.0.0, run:
 
@@ -35,7 +41,9 @@ In the output you'll see that the Microsoft image is used as base and the the np
  => => naming to docker.io/library/ui5dev:1.0.0 
 ```
 
-# Usage
+## Usage
+
+### Local registry
 
 The image can now be used by a devcontainer that references it. For a local image registry, this is done by using ui5dev:1.0.0
 
@@ -43,7 +51,7 @@ The image can now be used by a devcontainer that references it. For a local imag
 "image": "ui5dev:1.0.0",
 ```
 
-## Docker Hub
+### Docker Hub
 
 The images is published at Docker Hub: https://hub.docker.com/r/tobiashofmann/ui5-devcontainer
 
