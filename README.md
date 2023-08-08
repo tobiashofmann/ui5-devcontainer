@@ -24,6 +24,8 @@ npm start
 
 Accessing the UI5 app via [http://localhost:8080](http://localhost:8080)
 
+## Additional information 
+
 The image is based on the typescript devcontainer from Microsoft: [typescript node](https://mcr.microsoft.com/en-us/product/devcontainers/typescript-node/about).
 
 The image adds ui5 cli, yo and easy-ui5:
@@ -31,8 +33,6 @@ The image adds ui5 cli, yo and easy-ui5:
 ```sh
 npm install -g @ui5/cli yo generator-easy-ui5
 ```
-
-
 
 # Image
 
