@@ -1,5 +1,28 @@
 # ui5-devcontainer
-devcontainer with ui5 cli and other tools
+
+This repo contains the information to use a devcontainer fitted for UI5 development. This repo contains the devcontainer with ui5 cli and other tools, as well as the Dockerfile to build the needed image. The image build step is optional as the referenced images is available publicly at Docker Hub. The devcontainer is inteded to be used by UI5 developers that want to develop UI5 apps using TypeScript.
+
+# Devcontainer
+
+The devcontainer is the file .devcontainer/devcontainer.json. Copy this file to the root folder of your target project and open the folder from VS Code as a dev container. This will create a new container named UI5 development and add the following VS Code plugins: eslint and SAP UX Fiori Tools. 
+
+## Devcontainer for UI5 app development
+
+To use the devcontainer, open the container in VS Code. 
+
+Create a new project using yo easy-ui5. 
+
+```sh
+yo easy-ui5
+```
+
+Select the app type, like ts-app. Running the UI5 app inside the container via npm start is possible as the port 8080 is exposed locally. 
+
+```sh
+npm start
+```
+
+Accessing the UI5 app via [http://localhost:8080](http://localhost:8080)
 
 The image is based on the typescript devcontainer from Microsoft: [typescript node](https://mcr.microsoft.com/en-us/product/devcontainers/typescript-node/about).
 
@@ -9,9 +32,7 @@ The image adds ui5 cli, yo and easy-ui5:
 npm install -g @ui5/cli yo generator-easy-ui5
 ```
 
-# Devcontainer
 
-The devcontainer is the file .devcontainer/devcontainer.json. Copy this file to the root folder of your target project and open the folder from VS Code as a dev container. This will create a new container named UI5 development and add the following VS Code plugins: eslint and SAP UX Fiori Tools. 
 
 # Image
 
