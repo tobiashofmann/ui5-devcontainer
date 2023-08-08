@@ -42,3 +42,11 @@ The image can now be used by a devcontainer that references it. For a local imag
 ```json
 "image": "ui5dev:1.0.0",
 ```
+
+## Docker Hub
+
+The images is published at Docker Hub: https://hub.docker.com/r/tobiashofmann/ui5-devcontainer
+
+```json
+"image": "tobiashofmann/ui5-devcontainer:1.0.0",
+```
