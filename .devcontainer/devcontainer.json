@@ -1,0 +1,19 @@
+{
+	"name": "UI5 development",
+	"image": "tobiashofmann/ui5-devcontainer:1.0.0",
+
+	"features": { },
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"sapse.sap-ux-fiori-tools-extension-pack",
+				"dbaeumer.vscode-eslint"
+			]
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.	
+	"forwardPorts": [8080, 8081]
+  
+}
